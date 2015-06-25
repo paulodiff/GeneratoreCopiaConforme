@@ -68,6 +68,7 @@ Software per il calcolo dell'impronta hash md5 (RFC 1321)
 
 * http://esrg.sourceforge.net/utils_win_up/md5sum/
 * https://www.fourmilab.ch/md5/ (scelto)
+* https://it.wikipedia.org/wiki/MD5
 
 ##Per qualsiasi informazione 
 
