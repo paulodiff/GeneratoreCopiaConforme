@@ -33,6 +33,8 @@ Le instestazione ed il piede del documento di testo sono personalizzabili modifi
 
 ##Installazione
 
+> N.B. Piattaforma utilizzata Windows 7 x86
+
 Copiare in una cartella qualsiasi ad es: c:\copiaconforme i seguenti files:
 
 ```sh
