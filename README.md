@@ -19,7 +19,9 @@ Il sottoscritto dichiara che i seguenti documenti digitali identificati da nome 
 b133555217f2edf4da555ae8b60fef27 21ec6e365318c9fae5943b06de49d7635a7cd2e2 a.pdf
 9540bedc071c150c3ad2fdcc70aee294 b284246ef8cab09be786c3f84369f076972efa22 b.pdf
 
-Nota: l'impronta digitale è calcolata attraverso algoritmo standard md5 (RFC 1321)
+Nota: l'impronta digitale è calcolata attraverso algoritmo standard md5 (RFC 1321) e SHA-1 
+
+
 
 Il presente documento è firmato digitalmente
 
