@@ -7,8 +7,8 @@
 
 ' # PARAMETRI MODIFICABILI #'
 
-' Posizione MD5 per il calcolo hash'
-strMd5Command = "c:\copiaconforme\md5.exe"
+' Posizione per il software per il calcolo hash (fciv)'
+strMd5Command = "c:\copiaconforme\fciv.exe"
 
 
 strIntestazioneLettera = "COMUNE DI RIMINI " & Now() &  vbCrLf & vbCrLf & _
@@ -20,6 +20,11 @@ strPiedeLettera = vbCrLf & vbCrLf & _
                   "Il documento è firmato digitalmente"
 
 ' # Esecuzione ** NON MODIFICARE ** '
+
+
+strIntestazioneMD5_SHA1 = "                MD5                             SHA-1                    " & vbCrLf & _
+                          "-------------------------------------------------------------------------"
+
 
 Function timeStamp()
     Dim t 
@@ -55,29 +60,39 @@ For Each strArg in objArgs
   strFolder = objFSO.GetParentFolderName(objFile)
   strFileName = objFSO.GetFileName(objFile)
 
-  strExecuteCommand = strMd5Command & " " & strArg
+  'Preparazione del comando da eseguire:
+
+  strExecuteCommand = strMd5Command & " " & strArg & " -both"
 
   WScript.Echo strExecuteCommand  
   Set oExec = objShell.Exec(strExecuteCommand)
 
 	Do While Not oExec.StdOut.AtEndOfStream
 	    strText = oExec.StdOut.ReadLine()
-	    Wscript.Echo strText
+	    'Wscript.Echo strText
 	Loop
 
-    arrToken=split(strText, "  ")
+    'Split output per i files
+
+    Wscript.Echo strText
+
+
+    arrToken=split(strText, " ")
 
     Wscript.Echo arrToken(0)
 
+  'strRow = ""
 	'for each x in arrToken
-    ' 	Wscript.Echo "Par:" & x
-    '	strMessage = strMessage & x & " "
+  ''  	Wscript.Echo "Par:" & x
+  ''    strRow = strRow & x & " "
 	'next
 
-	strMessage = strMessage & arrToken(0)  & " " & strFileName  & vbCrLf
+	strMessage = strMessage & arrToken(0)  & " " & arrToken(1)  & " " & strFileName  & vbCrLf
 
 Next
 
+
+strMessage = strIntestazioneMD5_SHA1 & vbCrLf & strMessage
 
 ' Write Copia Conforme
 strDateNow = timeStamp()
@@ -89,11 +104,11 @@ Wscript.Echo strDateNow
 Wscript.Echo strFullMessage
 
 
+' Scrive il file della Copia conforme '
 Set objFSO = objFSO.CreateTextFile(strCopiaFullPathName,True)
 objFSO.Write strFullMessage
 objFSO.Close
 
-'msgbox "First parameter passed was "  & var1 & " and second parameter passed was " & var2
 
 'Clear the objects at the end of your script.
 set objArgs = Nothing

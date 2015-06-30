@@ -34,12 +34,13 @@ Le instestazione ed il piede del documento di testo sono personalizzabili modifi
 ##Installazione
 
 > N.B. Piattaforma utilizzata Windows 7 x86
+> Software per il calcolo degli hash MD5 ed SHA-1 di Microsoft (Microsoft File Checksum Integrity Verifier)
 
 Copiare in una cartella qualsiasi ad es: c:\copiaconforme i seguenti files:
 
 ```sh
 md5.vbs
-md5.exe
+fciv.exe
 ```
 
 Aprire esplora risorse e nella barra degli indirizzi indicare 
@@ -66,9 +67,11 @@ DichiarazioneCopiaConforme-AAAA-MM-DD_hhmm.txt
 
 Software per il calcolo dell'impronta hash md5 (RFC 1321)
 
+* https://www.microsoft.com/en-us/download/details.aspx?id=11533 (Microsoft File Checksum Integrity Verifier)
 * http://esrg.sourceforge.net/utils_win_up/md5sum/
 * https://www.fourmilab.ch/md5/ (scelto)
 * https://it.wikipedia.org/wiki/MD5
+
 
 ##Per qualsiasi informazione 
 
