@@ -16,7 +16,7 @@ strIntestazioneLettera = "COMUNE DI RIMINI " & Now() &  vbCrLf & vbCrLf & _
                          "Il sottoscritto dichiara che i seguenti documenti digitali identificati da nome del file ed impronta digitale (hash) sono conformi agli originali."  & vbCrLf & vbCrLf 
 
 strPiedeLettera = vbCrLf & vbCrLf & _
-                  "Nota: l'impronta digitale è calcolata attraverso algoritmo standard md5 (RFC 1321)" & vbCrLf & vbCrLf & _
+                  "Nota: l'impronta digitale è calcolata attraverso algoritmo  md5 (RFC 1321) e SHA-1 " & vbCrLf & vbCrLf & _
                   "Il documento è firmato digitalmente"
 
 ' # Esecuzione ** NON MODIFICARE ** '
