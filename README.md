@@ -13,9 +13,11 @@ DICHIARAZIONE DI CONFORMITA' ALL'ORIGINALE DELLA COPIA DI ATTI O DOCUMENTI
 
 Il sottoscritto dichiara che i seguenti documenti digitali identificati da nome del file ed impronta digitale (hash) sono conformi agli originali.
 
-B133555217F2EDF4DA555AE8B60FEF27 thesis.pdf
-59BD4E3EB9F9345EC43A93BD54561979 dematerializzazionebelisario_maggioli.pdf
-90C0C06791C4BD985656D5B549D37483 ConvegnoIdem4-mazzini-pres.pdf
+	
+                MD5                             SHA-1                    
+-------------------------------------------------------------------------
+b133555217f2edf4da555ae8b60fef27 21ec6e365318c9fae5943b06de49d7635a7cd2e2 a.pdf
+9540bedc071c150c3ad2fdcc70aee294 b284246ef8cab09be786c3f84369f076972efa22 b.pdf
 
 Nota: l'impronta digitale è calcolata attraverso algoritmo standard md5 (RFC 1321)
 
@@ -33,8 +35,8 @@ Le instestazione ed il piede del documento di testo sono personalizzabili modifi
 
 ##Installazione
 
-> N.B. Piattaforma utilizzata Windows 7 x86
-> Software per il calcolo degli hash MD5 ed SHA-1 di Microsoft (Microsoft File Checksum Integrity Verifier)
+> La piattaforma utilizzata Windows 7 x86
+> Il software per il calcolo degli hash MD5 ed SHA-1 di Microsoft (Microsoft File Checksum Integrity Verifier)
 
 Copiare in una cartella qualsiasi ad es: c:\copiaconforme i seguenti files:
 
@@ -65,7 +67,7 @@ DichiarazioneCopiaConforme-AAAA-MM-DD_hhmm.txt
 
 ##Note
 
-Software per il calcolo dell'impronta hash md5 (RFC 1321)
+Software per il calcolo dell'impronta hash md5 (RFC 1321) e SHA-1
 
 * https://www.microsoft.com/en-us/download/details.aspx?id=11533 (Microsoft File Checksum Integrity Verifier)
 * http://esrg.sourceforge.net/utils_win_up/md5sum/
