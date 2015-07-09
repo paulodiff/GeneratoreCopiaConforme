@@ -63,9 +63,17 @@ GENERATORE DI COPIA CONFORME
 ```
 ##Utilizzo
 
-Per utilizzare il software è sufficiente selezionare i file per i quali è necessario generare la copia conforme con il tasto destro del mouse selezionare INVIA A e poi GENERATORE COPIA CONFORME, nella stessa cartella verrà generato un file di testo di questo tipo:
+Il software utilizza il meccanismo "Invia A" di Windows che è attivabile attraverso il tasto destro del mouse.
+Per generare il documento di Dichiarazione di Copia conforme per una serie di documenti è necessario selezionare i documenti e cliccare sul tasto destro, poi selezionare INVIA A e poi selezionare la voce : Genera Copia Conforme.
+Verrà eseguito il software e nella stessa cartella di dove si trovano i documenti verrà generato un file di testo con questp nome:
 
+```sh
 DichiarazioneCopiaConforme-AAAA-MM-DD_hhmm.txt
+```
+
+che racchiude la dichiarazione, le impronte digitali ed i nomi dei files che devono essere dichiarati conformi agli originali.
+
+Vedi anche il ManualeOperativo.pdf (tra i files del progetto)
 
 ##Note
 
