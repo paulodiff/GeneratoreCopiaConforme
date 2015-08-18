@@ -28,6 +28,8 @@ Il presente documento è firmato digitalmente
 Rimini 01/01/2000
 ```
 
+In questo progetto è stato realizzato un software per la creazione di una Dichiarazione di Copia Conforme in formato testo 
+molto user friendly!
 
 ##Descrizione del software
 
@@ -35,16 +37,22 @@ Il programma è stato realizzato in VBScript; viene usato un generatore di hash 
 Il software si avvale della funzione di windows "INVIA A" che permette di selezione più file di una cartella ed inviarli al generatore di Copia Conforme che prendendoli come input calcola gli hash e crea il file di testo 
 Le instestazione ed il piede del documento di testo sono personalizzabili modificando il file md5.vbs
 
-##Installazione
+##Manuale d'uso
+
+Vedi il file ManualeOperativo.pdf (tra i files del progetto)
+
+##Installazione e personalizzazione
 
 > La piattaforma utilizzata Windows 7 x86
 > Il software per il calcolo degli hash MD5 ed SHA-1 di Microsoft (Microsoft File Checksum Integrity Verifier)
 
-Copiare in una cartella qualsiasi ad es: c:\copiaconforme i seguenti files:
+Creare la cartella c:\copiaconforme i seguenti files:
 
 ```sh
 md5.vbs
 fciv.exe
+INTESTAZIONE.txt
+PIEDE.txt
 ```
 
 Aprire esplora risorse e nella barra degli indirizzi indicare 
@@ -61,6 +69,17 @@ Poi come nome del collegamento inserire:
 ```sh
 GENERATORE DI COPIA CONFORME
 ```
+
+La personalizzazione della Dichiarazione avviene modificando i due file di testo :
+
+```sh
+INTESTAZIONE.txt
+PIEDE.txt
+```
+
+che contengono appunto la parte iniziale e finale della dichiarazione.
+
+
 ##Utilizzo
 
 Il software utilizza il meccanismo "Invia A" di Windows che è attivabile attraverso il tasto destro del mouse.
@@ -73,7 +92,6 @@ DichiarazioneCopiaConforme-AAAA-MM-DD_hhmm.txt
 
 che racchiude la dichiarazione, le impronte digitali ed i nomi dei files che devono essere dichiarati conformi agli originali.
 
-Vedi anche il ManualeOperativo.pdf (tra i files del progetto)
 
 ##Note
 

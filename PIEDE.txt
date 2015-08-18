@@ -1,0 +1,6 @@
+
+======================================================================================================================
+
+Nota: l'impronta digitale è calcolata attraverso algoritmo  md5 (RFC 1321) e SHA-1 
+
+Il documento è firmato digitalmente
